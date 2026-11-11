@@ -1,0 +1,30 @@
+/* admin.css — estilo sobrio del panel de administración (se carga después de styles.css) */
+body.admin { background: #E9E6E1; color: #222; }
+.admin-barra { background: #2B2B2B; color: #eee; display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem; padding: .8rem 4%; }
+.admin-barra nav a { color: #ddd; margin-left: 1.2rem; }
+.admin-barra nav a:hover { color: #fff; }
+.admin-contenido { width: 92%; max-width: 80rem; margin: 1.5rem auto 3rem; }
+.admin-titulo { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.admin-titulo h1 { font-size: 1.6rem; margin: 0; }
+.admin-caja { max-width: 26rem; margin: 3rem auto; background: #F6F4F1; border: 1px solid #aaa; padding: 1.5rem; }
+body.admin h1, body.admin h2 { font-family: var(--texto); color: #222; }
+body.admin h2 { font-size: 1.2rem; margin-top: 2rem; }
+body.admin .btn { background: #3A3A3A; border: 1px solid #222; color: #fff; border-radius: 3px; padding: .45rem .9rem; font-size: .95rem; }
+body.admin .btn:hover { background: #111; color: #fff; }
+body.admin .btn.sec { background: #F6F4F1; color: #222; border-color: #777; }
+body.admin .btn.sec:hover { background: #ddd; color: #222; }
+body.admin a { color: #1d4f7a; }
+body.admin .admin-barra a { color: #ddd; }
+body.admin input, body.admin select, body.admin textarea { border: 1px solid #888; border-radius: 3px; background: #fff; }
+body.admin fieldset { border: 1px solid #aaa; background: #F6F4F1; border-radius: 3px; margin-bottom: 1rem; padding: .8rem 1rem 1rem; }
+body.admin legend { font-weight: 700; padding: 0 .4rem; }
+body.admin .mensaje { background: #F6F4F1; border-left: 5px solid #3A3A3A; }
+body.admin .mensaje.malo { border-left-color: #a33; }
+.tabla { width: 100%; border-collapse: collapse; background: #F6F4F1; }
+.tabla th, .tabla td { border: 1px solid #bbb; padding: .5rem .6rem; text-align: left; vertical-align: middle; }
+.tabla th { background: #D8D4CE; }
+.en-linea { display: inline; }
+.en-linea .btn { margin: 2px; }
+.foto { display: inline-block; margin: 0 1rem 1rem 0; text-align: center; vertical-align: top; }
+.foto img { width: 8rem; height: 8rem; object-fit: cover; border: 1px solid #888; display: block; margin-bottom: .4rem; }

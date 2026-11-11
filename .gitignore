@@ -1,0 +1,5 @@
+api/config.php
+assets/images/cafes/*
+!assets/images/cafes/.gitkeep
+.DS_Store
+Thumbs.db

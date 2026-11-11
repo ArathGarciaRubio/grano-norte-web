@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encuentra tu café · Grano Norte</title>
+<meta name="description" content="Responde tres preguntas y descubre qué café del catálogo va con tu gusto.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Grano Norte<small>Café de especialidad</small></a>
+    <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav aria-label="Principal">
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="encuentra-tu-cafe.html" aria-current="page">Encuentra tu café</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="seccion">
+  <div class="contenedor angosto">
+    <h1 class="titulo-orn">Encuentra tu café</h1>
+    <p class="lead">Tres preguntas cortas. Al terminar te mostramos los cafés del catálogo que coinciden con tus respuestas.</p>
+    <form action="catalogo.html" method="get" class="filtros-simple">
+      <div class="campo"><label for="q">¿Qué sabor te gusta más?</label>
+        <select id="q" name="q">
+          <option value="">Me da igual</option>
+            <option>Chocolate</option>
+            <option>Caramelo</option>
+            <option>Nuez</option>
+            <option>Naranja</option>
+            <option>Durazno</option>
+            <option>Frutos rojos</option>
+            <option>Jazmín</option>
+            <option>Miel</option>
+        </select></div>
+      <div class="campo"><label for="tueste">¿Qué tueste prefieres?</label>
+        <select id="tueste" name="tueste">
+          <option value="">No lo sé</option>
+          <option value="claro">Claro: más ácido y frutal</option>
+          <option value="medio">Medio: equilibrado</option>
+          <option value="oscuro">Oscuro: más intenso y amargo</option>
+        </select></div>
+      <div class="campo"><label for="formato">¿Cómo lo prefieres?</label>
+        <select id="formato" name="formato">
+          <option value="">Grano o molido</option>
+          <option value="grano">En grano (yo lo muelo)</option>
+          <option value="molido">Molido</option>
+        </select></div>
+      <button type="submit" class="btn">Ver cafés para mí</button>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="pie">
+  <div class="contenedor">
+    <p><strong>Grano Norte</strong> · Conocer el café. Encontrar tu sabor.</p>
+    <p>Marca creada para un proyecto académico de Programación Integral (UACJ), basada en productos reales. No es un comercio ni vende en línea.</p>
+    <p><a href="contacto.html">Contacto</a> · <a href="ubicacion.html">Ubicación</a></p>
+  </div>
+</footer>
+<script src="assets/js/sitio.js"></script>
+</body>
+</html>

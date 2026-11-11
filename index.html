@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grano Norte · Café de especialidad</title>
+<meta name="description" content="Cafés de especialidad seleccionados, con una guía sencilla para elegir el que va con tu gusto.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Grano Norte<small>Café de especialidad</small></a>
+    <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav aria-label="Principal">
+      <ul class="menu" id="menu">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="encuentra-tu-cafe.html">Encuentra tu café</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="seccion hero">
+  <div class="contenedor dos-cols">
+    <div>
+      <span class="sello">Café de especialidad</span>
+      <h1>Café de especialidad, recomendado para ti</h1>
+      <p class="lead">Cafés seleccionados y una guía sencilla para elegir el que va con tu gusto, sin necesidad de saber términos técnicos.</p>
+      <div class="fila-botones">
+        <a class="btn" href="catalogo.html">Explorar cafés</a>
+        <a class="btn sec" href="encuentra-tu-cafe.html">Encuentra tu café</a>
+      </div>
+    </div>
+    <div class="ph r43"><span>Fotografía por agregar</span><img src="assets/images/hero.jpg" alt="Taza de café de especialidad" onerror="this.remove()"></div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor dos-cols">
+    <div>
+      <h2 class="titulo-orn">Quién recomienda</h2>
+      <p>Cada café de Grano Norte lo selecciona una persona que conoce su origen, su perfil de sabor y la mejor manera de prepararlo, y que puede recomendarte el indicado según tus gustos.</p>
+      <ul class="chips"><li class="chip">Variedades</li><li class="chip">Procesos</li><li class="chip">Métodos de preparación</li></ul>
+    </div>
+    <div class="ph r43"><span>Fotografía por agregar</span><img src="assets/images/quien-recomienda.jpg" alt="Persona preparando café" onerror="this.remove()"></div>
+  </div>
+</section>
+
+<section class="seccion banda" aria-roledescription="carrusel" aria-label="Galería: del grano a la taza">
+  <div class="contenedor angosto">
+    <h2 class="titulo-orn">Del grano a la taza</h2>
+    <div id="carrusel">
+      <figure class="slide">
+        <div class="ph r169"><span>Fotografía por agregar</span><img src="assets/images/carrusel/slide-1.jpg" alt="Granos de café recién tostados" onerror="this.remove()"></div>
+        <figcaption class="meta">1 de 5 · Café recién tostado</figcaption>
+      </figure>
+      <figure class="slide" hidden>
+        <div class="ph r169"><span>Fotografía por agregar</span><img src="assets/images/carrusel/slide-2.jpg" alt="Selección de granos de café" onerror="this.remove()"></div>
+        <figcaption class="meta">2 de 5 · Selección de granos</figcaption>
+      </figure>
+      <figure class="slide" hidden>
+        <div class="ph r169"><span>Fotografía por agregar</span><img src="assets/images/carrusel/slide-3.jpg" alt="Preparación de café en V60" onerror="this.remove()"></div>
+        <figcaption class="meta">3 de 5 · Preparación en V60</figcaption>
+      </figure>
+      <figure class="slide" hidden>
+        <div class="ph r169"><span>Fotografía por agregar</span><img src="assets/images/carrusel/slide-4.jpg" alt="Molino de café" onerror="this.remove()"></div>
+        <figcaption class="meta">4 de 5 · Molienda según el método</figcaption>
+      </figure>
+      <figure class="slide" hidden>
+        <div class="ph r169"><span>Fotografía por agregar</span><img src="assets/images/carrusel/slide-5.jpg" alt="Taza de café servida" onerror="this.remove()"></div>
+        <figcaption class="meta">5 de 5 · La taza lista</figcaption>
+      </figure>
+    </div>
+    <div class="car-ctl">
+      <button type="button" class="btn sec" id="car-ant" aria-label="Diapositiva anterior">←</button>
+      <button type="button" class="btn sec" id="car-pausa">Pausar</button>
+      <button type="button" class="btn sec" id="car-sig" aria-label="Diapositiva siguiente">→</button>
+    </div>
+  </div>
+</section>
+
+<section class="seccion">
+  <div class="contenedor">
+    <h2 class="titulo-orn">Cafés destacados</h2>
+    <div class="tarjetas" id="destacados"><p>Cargando cafés…</p></div>
+    <p><a class="btn sec" href="catalogo.html">Ver todo el catálogo</a></p>
+  </div>
+</section>
+
+<section class="seccion banda">
+  <div class="contenedor dos-cols">
+    <div>
+      <h2>¿No sabes cuál elegir?</h2>
+      <p class="lead">Dinos qué sabor te gusta y cómo lo prefieres, y te llevamos a los cafés que mejor van contigo.</p>
+      <a class="btn" href="encuentra-tu-cafe.html">Encuentra tu café</a>
+    </div>
+    <div>
+      <h2>Ubicación y contacto</h2>
+      <p>Consulta la ubicación de referencia del proyecto y las formas de contacto.</p>
+      <p><a href="ubicacion.html">Ver ubicación</a> · <a href="contacto.html">Ver contacto</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="pie">
+  <div class="contenedor">
+    <p><strong>Grano Norte</strong> · Conocer el café. Encontrar tu sabor.</p>
+    <p>Marca creada para un proyecto académico de Programación Integral (UACJ), basada en productos reales. No es un comercio ni vende en línea.</p>
+    <p><a href="contacto.html">Contacto</a> · <a href="ubicacion.html">Ubicación</a></p>
+  </div>
+</footer>
+<script src="assets/js/sitio.js"></script>
+<script src="assets/js/inicio.js"></script>
+</body>
+</html>

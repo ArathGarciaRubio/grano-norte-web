@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo · Grano Norte</title>
+<meta name="description" content="Catálogo de cafés de especialidad con filtros por origen, tueste, presentación, gramaje y precio.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Grano Norte<small>Café de especialidad</small></a>
+    <button class="menu-boton" id="menu-boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav aria-label="Principal">
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+        <li><a href="encuentra-tu-cafe.html">Encuentra tu café</a></li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="seccion">
+  <div class="contenedor">
+    <h1 class="titulo-orn">Catálogo</h1>
+    <p class="lead">Filtra por lo que te importa. Los filtros se pueden combinar.</p>
+    <div class="catalogo">
+      <form class="filtros" id="filtros" aria-label="Filtros del catálogo">
+        <h2>Filtros</h2>
+        <div class="campo"><label for="q">Buscar</label>
+          <input type="text" id="q" name="q" placeholder="Nombre, origen o nota"></div>
+        <div class="campo"><label for="pais">País de origen</label>
+          <select id="pais" name="pais">
+            <option value="">Todos</option>
+            <option>México</option>
+            <option>Colombia</option>
+            <option>Etiopía</option>
+            <option>Guatemala</option>
+          </select></div>
+        <div class="campo"><label for="tueste">Tueste</label>
+          <select id="tueste" name="tueste">
+            <option value="">Todos</option>
+            <option value="claro">Claro</option>
+            <option value="medio">Medio</option>
+            <option value="oscuro">Oscuro</option>
+          </select></div>
+        <div class="campo"><label for="formato">Presentación</label>
+          <select id="formato" name="formato">
+            <option value="">Grano o molido</option>
+            <option value="grano">Grano</option>
+            <option value="molido">Molido</option>
+          </select></div>
+        <div class="campo"><label for="gramaje">Gramaje</label>
+          <select id="gramaje" name="gramaje">
+            <option value="">Todos</option>
+            <option value="250">250 g</option>
+            <option value="1000">1 kg</option>
+          </select></div>
+        <div class="campo"><label for="precio">Precio máximo ($)</label>
+          <input type="number" id="precio" name="precio" min="0" step="10" placeholder="Sin límite"></div>
+        <button type="reset" class="btn sec">Quitar filtros</button>
+      </form>
+      <div>
+        <p id="resultado-info" aria-live="polite">Cargando cafés…</p>
+        <div class="tarjetas" id="lista"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="pie">
+  <div class="contenedor">
+    <p><strong>Grano Norte</strong> · Conocer el café. Encontrar tu sabor.</p>
+    <p>Marca creada para un proyecto académico de Programación Integral (UACJ), basada en productos reales. No es un comercio ni vende en línea.</p>
+    <p><a href="contacto.html">Contacto</a> · <a href="ubicacion.html">Ubicación</a></p>
+  </div>
+</footer>
+<script src="assets/js/sitio.js"></script>
+<script src="assets/js/catalogo.js"></script>
+</body>
+</html>
